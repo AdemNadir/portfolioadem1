@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djeffal Ahmed Adem Nadir | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "DU-hRYEw0_aUqoud4",
+            });
+        })();
+    </script>
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-name" id="heroName">Djeffal Ahmed Adem Nadir</h1>
+            <p class="hero-tagline" id="heroTagline">I’m a CS student who enjoys building websites and solving coding
+                problems in a clear and organized way. .. ...</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <img src="adem2.png" alt="Djeffal Ahmed Adem Nadir">
+                <div class="about-icon"></div>
+                <p class="about-text">I'm a 19 year-old CS student from Algeria., I like creating simple and useful
+                    project, understanding how things work, and collaborating smoothly with clients to turn ideas into
+                    real projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-skill="html">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-skill="css">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percent">83%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="83"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="c">
+                    <div class="skill-header">
+                        <span class="skill-name"> C </span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="python">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">72%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="72"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="javascript">
+                    <div class="skill-header">
+                        <span class="skill-name">javascript</span>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="50"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title"> Affiliates Markting Web</h3>
+                    <p class="project-description">A responsive affiliate website optimized for product promotion, user
+                        engagement, and smooth navigation.</p>
+                    <div class="submit-btn"><a href="https://primewellness.online/">View</a></div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">E-Commerce Website </h3>
+                    <p class="project-description">A responsive online store offering clean product browsing and a
+                        smooth shopping experience. "Still in progress"</p>
+                    <div class="submit-btn"><a href="https://ademnadir.github.io/E-commerce-website/">View</a></div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Tech Store Web</h3>
+                    <p class="project-description">A modern tech-focused website showcasing products with a clean layout
+                        and smooth user navigation. "Still in progress"</p>
+                    <div class="submit-btn"><a href="https://ademnadir.github.io/Tech-web-/">View</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-input" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" class="form-input" placeholder="Email " required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" class="form-input" placeholder="subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" class="form-input" rows="5" placeholder="Message . . ." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" onclick="sendMail()">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Djeffal Ahmed Adem Nadir. All rights reserved.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+    
+</body>
+
+</html>
